@@ -15,6 +15,9 @@ app.use(bodyParser.json());
 //--enabling CORS for all requests--//
 app.use(cors());
 app.use(router);
+//--using bodyParser to parse JSON bodies into JS objects--//
+app.use(bodyParser.json());
+
 app.get('/', (req, res) => {
     res.send("Everything is working fine!");
 }); 
